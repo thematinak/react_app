@@ -42,7 +42,6 @@ export function NotificationProvider({ children }) {
     const [notifications, setNotification] = useState([]);
 
     function notifProccessing(param) {
-        console.log('notifProccessing', param, typeof param);
         if (typeof param === 'number') {
             setNotification((notif) => notif.filter(i => i.id !== param))
         } else if (typeof param === 'object') {

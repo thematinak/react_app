@@ -9,7 +9,6 @@ const mapVariant = {
 
 export default function Notification() {
     const notifications = useNotification()
-    console.log('notif', notifications);
     return (
     <ToastContainer position='top-end' className="m-3">
         {notifications.map(i => (
