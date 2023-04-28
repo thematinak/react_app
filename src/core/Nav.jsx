@@ -1,15 +1,17 @@
 import { Nav } from "react-bootstrap";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function NavBar() {
-    return <Nav variant="tabs">
+    const pathName = useLocation().pathname
+    return <Nav variant="tabs" defaultActiveKey={pathName}>
         <Nav.Item>
-            <Nav.Link href="/">Home</Nav.Link>
+            <NavLink className='nav-link' to="/" eventKey='/'>Home</NavLink>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link href="/image">Image</Nav.Link>
+            <NavLink className='nav-link'  to="/image" eventKey='/image'>Image</NavLink>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link href="/notification">Notification</Nav.Link>
+            <NavLink className='nav-link' to="/notification" eventKey='/notification'>Notification</NavLink>
         </Nav.Item>
     </Nav>
     
