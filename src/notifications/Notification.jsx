@@ -11,7 +11,7 @@ export default function Notification() {
     const notifications = useNotification()
     console.log('notif', notifications);
     return (
-    <ToastContainer position='top-end'>
+    <ToastContainer position='top-end' className="m-3">
         {notifications.map(i => (
         <Toast bg={mapVariant[i.severity]} key={i.id}>
             <Toast.Body>{i.message}</Toast.Body>

@@ -5,7 +5,7 @@ import NavBar from "./Nav";
 
 export default function Layout() {
     return (
-    <>
+    <div className="m-3">
         <Notification />
         <Container>
             <Card>
@@ -17,7 +17,7 @@ export default function Layout() {
                 </Card.Body>
             </Card>
         </Container>
-    </>
+    </div>
     )
     
 }
