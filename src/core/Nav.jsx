@@ -14,6 +14,9 @@ export default function NavBar() {
             <Nav.Item>
                 <NavLink className='nav-link' to="/notification">Notification</NavLink>
             </Nav.Item>
+            <Nav.Item>
+                <NavLink className='nav-link' to="/redux">Redux</NavLink>
+            </Nav.Item>
         </Nav>
     )
     
